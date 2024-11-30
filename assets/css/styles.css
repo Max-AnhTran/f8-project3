@@ -48,6 +48,7 @@ a {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 3rem; /* 166.667% */
+    transition: 0.2s;
 }
 
 .btn:hover {
@@ -93,6 +94,7 @@ a {
 .top-header {
     position: sticky;
     top: -20px;
+    z-index: 9999;
     background: var(--primary-color);
     padding: 30px 0 10px;
 }
@@ -317,7 +319,7 @@ a {
 
 .work-item {
     padding: 43px 42px;
-    background: #FFF;
+    background: #fff;
     border: 16px solid #eaf6ff;
     transition: 0.3s;
 }
@@ -326,7 +328,7 @@ a {
     border: 16px solid #2e80ce;
     transform: translateY(-16px);
     .work-item__more {
-        color: #2E80CE;
+        color: #2e80ce;
     }
 }
 
@@ -390,4 +392,85 @@ a {
 
 .feature__btn {
     margin-top: 38px;
+}
+
+/* MEMBERS */
+
+.members {
+    padding: 85px 0;
+}
+
+.members__content {
+    text-align: center;
+}
+
+.members__btn {
+    margin-top: 38px;
+}
+
+.members-list {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.members-img-bg {
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    width: 270px;
+    height: 318px;
+    border-radius: 6px;
+    background: #eaf6ff;
+}
+
+.members__img {
+    transition: 0.3s;
+}
+
+.members-img-bg:hover .members__img {
+    transform: scale(1.1);
+}
+
+.members__name {
+    display: block;
+    margin-top: 12px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.8rem; /* 175% */
+}
+
+.members__uni {
+    display: block;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.6rem; /* 185.714% */
+}
+
+.members-page-btns {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.members__page-btn {
+    color: #575F66;
+    width: 36px;
+    height: 36px;
+    background: #FFF;
+    border: 1.5px solid #575F66;
+    border-radius: 999px;
+    transition: 0.1s;
+}
+
+.members__page-btn:hover {
+    cursor: pointer;
+    color: #FFF;
+    width: 36px;
+    height: 36px;
+    background: #2E80CE;
+    border: 1.5px solid #2E80CE;
+    border-radius: 999px;
 }
