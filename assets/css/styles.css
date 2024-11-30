@@ -353,3 +353,41 @@ a {
     font-weight: 300;
     line-height: 2.8rem; /* 175% */
 }
+
+/* FEATURE */
+
+.feature {
+    padding: 170px 0 85px;
+}
+
+.section__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature__img {
+    border-radius: 6px;
+}
+
+.feature__img--lower {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+}
+
+.feature__img--upper {
+    margin-top: -250px;
+    margin-left: 238px;
+    width: 332px;
+    height: 370px;
+    object-fit: cover;
+}
+
+.feature-info {
+    max-width: 40.17%;
+}
+
+.feature__btn {
+    margin-top: 38px;
+}
