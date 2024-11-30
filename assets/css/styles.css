@@ -264,6 +264,7 @@ a {
     display: flex;
     border-radius: 10px;
     gap: 19px;
+    transition: 0.3s;
 }
 
 .services-item:hover {
@@ -280,9 +281,10 @@ a {
     height: 60px;
     background: #eff6fd;
     border-radius: 999px;
+    transition: 0.3s;
 }
 
-.service-name {
+.service-sub-title {
     font-size: 1.8rem;
     font-weight: 600;
 }
@@ -298,4 +300,56 @@ a {
 
 .services-btn {
     margin-top: 55px;
+}
+
+/* WORK */
+
+.work {
+    padding: 100px 0;
+    background: #f6fbff;
+}
+
+.work-list {
+    margin-top: 86px;
+    display: flex;
+    gap: 30px;
+}
+
+.work-item {
+    padding: 43px 42px;
+    background: #FFF;
+    border: 16px solid #eaf6ff;
+    transition: 0.3s;
+}
+
+.work-item:hover {
+    border: 16px solid #2e80ce;
+    transform: translateY(-16px);
+    .work-item__more {
+        color: #2E80CE;
+    }
+}
+
+.work-item__sub-title {
+    margin-top: 18px;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 3.6rem; /* 138.462% */
+}
+
+.work-item__desc {
+    margin-top: 28px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.8rem; /* 175% */
+}
+
+.work-item__more {
+    display: inline-block;
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.8rem; /* 175% */
 }
