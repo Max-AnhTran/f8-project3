@@ -69,54 +69,19 @@ a {
     align-items: center;
 }
 
-h2.title {
+.section__title {
     font-size: 5rem;
     font-weight: 600;
     line-height: 6rem; /* 120% */
     letter-spacing: -0.1rem;
 }
 
-.logo {
-    position: relative;
-    font-size: 1rem;
-}
-
-.logo::before {
-    content: "";
-    display: inline-block;
-    width: 3em;
-    height: 3em;
-    background: #2e80ce;
-    border-radius: 99px;
-}
-
-.logo::after {
-    content: "";
-    display: inline-block;
-    width: 1.6em;
-    height: 1.6em;
-    background: #fff;
-    border-radius: 99px;
-}
-
-.logo__text {
-    display: block;
-    text-align: right;
-}
-
-.logo__text1 {
-    color: #fff;
-
+.section__desc {
+    margin-top: 18px;
+    color: #575f66;
     font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.4rem; /* 77.778% */
-}
-
-.logo__text2 {
-    color: #fff;
-    font-size: 1.2rem;
     font-weight: 300;
-    line-height: 1.4rem;
+    line-height: 3rem; /* 166.667% */
 }
 
 /* HEADER */
@@ -127,9 +92,9 @@ h2.title {
 
 .top-header {
     position: sticky;
-    top: 0;
+    top: -20px;
     background: var(--primary-color);
-    padding: 30px 0 15px;
+    padding: 30px 0 10px;
 }
 
 .top-header__content {
@@ -202,7 +167,7 @@ h2.title {
 
 .hero {
     background: var(--primary-color);
-    min-height: calc(100vh - 89px);
+    min-height: calc(100vh - 84px);
 }
 
 .hero__content {
@@ -264,4 +229,73 @@ h2.title {
     height: 410px;
     object-fit: cover;
     border-radius: 0px 6px 6px 0px;
+}
+
+/* SERVICES */
+
+.services {
+    padding: 170px 0;
+}
+
+.services__content {
+    text-align: center;
+}
+
+.services-row {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services__img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.services-block {
+    text-align: left;
+}
+
+.services-item {
+    padding: 21px 22px 20px;
+    display: flex;
+    border-radius: 10px;
+    gap: 19px;
+}
+
+.services-item:hover {
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+    .services-item__icon {
+        color: #fff;
+        background: #2e80ce;
+    }
+}
+
+.services-item__icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: #eff6fd;
+    border-radius: 999px;
+}
+
+.service-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.service-desc {
+    margin-top: 8px;
+    max-width: 347px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.8rem; /* 175% */
+}
+
+.services-btn {
+    margin-top: 55px;
 }
