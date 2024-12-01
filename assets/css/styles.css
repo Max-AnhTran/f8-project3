@@ -426,6 +426,7 @@ a {
 
 .members__img {
     transition: 0.3s;
+    height: 290px;
 }
 
 .members-img-bg:hover .members__img {
@@ -473,4 +474,46 @@ a {
     background: #2E80CE;
     border: 1.5px solid #2E80CE;
     border-radius: 999px;
+}
+
+/* INSTALL */
+
+.install {
+    padding: 180px 0 85px;
+}
+
+.install__content {
+    position: relative;
+    padding: 75px 70px 73px;
+    background: #2E80CE;
+}
+
+.install__img {
+    width: 284px;
+}
+
+.install-images {
+    position: absolute;
+    top: -95px;
+    left: 70px;
+}
+
+.install-info {
+    max-width: 56.9%;
+    margin-left: auto;
+}
+
+.section__desc-install{
+    color: #FFF;
+}
+
+.section__title-install {
+    color: #fff;
+    max-width: 83.45%;
+}
+
+.install-row {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
 }
